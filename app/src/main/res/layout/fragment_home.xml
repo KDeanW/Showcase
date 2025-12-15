@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="227dp"
+                android:layout_height="194dp"
+                android:layout_gravity="start"
+                android:layout_margin="15dp"
+                android:src="@drawable/win_20251212_12_10_58_pro" />
+
+            <TextView
+                android:id="@+id/Biography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="I am a highschool student from southern Indiana with an interest in software endeneering an development." />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="124dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/earbuds"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="268dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+
+                    android:text="I have a deep love for music a spen a signifigant amount of the time on my phone listening to songs as I mess with\nmy sound mixing and equilizer settings."
+                    android:textColor="@color/black" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="Hobbies:" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:text="- Video games\n- Music (as mentioned)\n- personal coding projects when I have time" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
